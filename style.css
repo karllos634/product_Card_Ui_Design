@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css?family-Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #131313;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    position: relative;
+    margin: 30px;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.verde:before {
+    background: #9bdc28;
+}
+
+.azul:before {
+    background: #03a9f4;
+}
+
+.vermelho:before {
+    background: #e91e63;
+}
+
+.container .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+    content: "Nike";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.container .card .imgbx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgbx {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container .card .imgbx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 270px;
+}
+
+.container .card .contentbx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container .card:hover .contentbx {
+    height: 210px;
+}
+
+.container .card .contentbx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container .card .contentbx .size,
+.container .card .contentbx .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .contentbx .size {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container .card:hover .contentbx .color {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.container .card .contentbx .size h3,
+.container .card .contentbx .color h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container .card .contentbx .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background-color: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+}
+
+.container .card .contentbx .size span:hover {
+    background: #9bdc28;
+}
+
+.container .card .contentbx .color button {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container .card .contentbx .color button:nth-child(2) {
+    background: #9bdc28;
+}
+
+.container .card .contentbx .color button:nth-child(3) {
+    background: #03a9f4;
+}
+
+.container .card .contentbx .color button:nth-child(4) {
+    background: #e91e63;
+}
+
+.container .card .contentbx a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.container .card:hover .contentbx a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+.container .card .contentbx a:hover {
+    background: #9bdc28;
+    transition: 0.2s;
+}
+
+/******** Card 2 *********/
+
+button2 {
+    border: none;
+}
+
+.container2 {
+    position: relative;
+    margin: 30px;
+}
+
+.container2 .card2 {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container2 .card2:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.roxao:before {
+    background: #6e20b8;
+}
+
+.azulao:before {
+    background: #2e18f3;
+}
+
+.vermelhao:before {
+    background: #ff0303;
+}
+
+.container2 .card2:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container2 .card2:after {
+    content: "Nike";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.container2 .card2 .imgbx2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.container2 .card2:hover .imgbx2 {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container2 .card2 .imgbx2 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 270px;
+}
+
+.container2 .card2 .contentbx2 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container2 .card2:hover .contentbx2 {
+    height: 210px;
+}
+
+.container2 .card2 .contentbx2 h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container2 .card2 .contentbx2 .size2,
+.container2 .card2 .contentbx2 .color2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container2 .card2:hover .contentbx2 .size2 {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container2 .card2:hover .contentbx2 .color2 {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.container2 .card2 .contentbx2 .size2 h3,
+.container2 .card2 .contentbx2 .color2 h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container2 .card2 .contentbx2 .size2 span {
+    width: 26px;
+    height: 26px;   
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background-color: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+}
+
+.container2 .card2 .contentbx2 .size2 span:hover {
+    background: #9bdc28;
+}
+
+.container2 .card2 .contentbx2 .color2 button2 {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container2 .card2 .contentbx2 .color2 button2:nth-child(2)  {
+    background: #6e20b8;
+}
+
+.container2 .card2 .contentbx2 .color2 button2:nth-child(3) {
+    background: #2e18f3;
+}
+
+.container2 .card2 .contentbx2 .color2 button2:nth-child(4) {
+    background: #ff0303;
+}
+
+.container2 .card2 .contentbx2 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.container2 .card2:hover .contentbx2 a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+.container2 .card2 .contentbx2 a:hover {
+    background: #9bdc28;
+    transition: 0.2s;
+}
+
+
+/******** Card 3 **********/
+
+button3 {
+    border: none;
+}
+
+.container3 {
+    position: relative;
+    margin: 30px;
+}
+
+.container3 .card3 {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container3 .card3:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.amarelo:before {
+    background: #fbff00;
+}
+
+.azulzin:before {
+    background: #1739fc;
+}
+
+.vermelhinho:before {
+    background: #ff0303;
+}
+
+.container3 .card3:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container3 .card3:after {
+    content: "Nike";
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.container3 .card3 .imgbx3 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.container3 .card3:hover .imgbx3 {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container3 .card3 .imgbx3 img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 270px;
+}
+
+.container3 .card3 .contentbx3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+}
+
+.container3 .card3:hover .contentbx3 {
+    height: 210px;
+}
+
+.container3 .card3 .contentbx3 h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container3 .card3 .contentbx3 .size3,
+.container3 .card3 .contentbx3 .color3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container3 .card3:hover .contentbx3 .size3 {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+
+.container3 .card3:hover .contentbx3 .color3 {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+
+.container3 .card3 .contentbx3 .size3 h3,
+.container3 .card3 .contentbx3 .color3 h3 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container3 .card3 .contentbx3 .size3 span {
+    width: 26px;
+    height: 26px;   
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background-color: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+}
+
+.container3 .card3 .contentbx3 .size3 span:hover {
+    background: #9bdc28;
+}
+
+.container3 .card3 .contentbx3 .color3 button3 {
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container3 .card3 .contentbx3 .color3 button3:nth-child(2)  {
+    background: #fbff00;
+}
+
+.container3 .card3 .contentbx3 .color3 button3:nth-child(3) {
+    background: #1739fc;
+}
+
+.container3 .card3 .contentbx3 .color3 button3:nth-child(4) {
+    background: #ff0303;
+}
+
+.container3 .card3 .contentbx3 a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+
+.container3 .card3:hover .contentbx3 a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+
+.container3 .card3 .contentbx3 a:hover {
+    background: #9bdc28;
+    transition: 0.2s;
+}
